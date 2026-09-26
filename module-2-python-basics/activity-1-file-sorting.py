@@ -1,24 +1,23 @@
 """
 Module 2 — Activity: File Sorting with os and shutil
-Student: [your name]
-Date: [date]
+Student: Delos Santos, Junelle
+Date: 9/26/2026
 
 ============================================
 WHAT DID YOU BUILD? (explain in your own words)
 ============================================
-[Paste your working script below first, then come back and explain
-it here: what does your script do, and what rule did you use to
-sort the files? e.g. by extension, by name, by date, etc.]
+I built a file sorting program that automatically organizes files into different folders based on their file extensions. 
+I used the file extension as the rule for sorting the files.
 
 
 ============================================
 KEY VOCABULARY
 ============================================
-- os module:
-- shutil module:
-- file path:
-- directory:
-(add more as needed)
+- os module: a Python module used to interact with files, folders, and the operating system.
+- shutil module: a Python module used to move, copy, and manage files and folders.
+- file path: the location of a file or folder on a computer.
+- directory: a folder that contains files or other folders.
+- extension: identifies the file’s format and tells the operating system which application can open it.
 
 
 ============================================
@@ -27,20 +26,41 @@ YOUR SCRIPT
 Paste the code you already wrote for this activity below.
 """
 
+
+# --- paste your existing code here ---
 import os
 import shutil
 
-# --- paste your existing code here ---
-
+source_folder = "files"
+ 
+for filename in os.listdir(source_folder):
+ 
+    if filename.endswith((".jpg", ".png")):
+        folder = "Images"
+ 
+    elif filename.endswith((".txt", ".pdf")):
+        folder = "Documents"
+ 
+    else:
+        folder = "Others"
+ 
+    destination = source_folder + "/" + folder
+ 
+    os.makedirs(destination, exist_ok=True)
+ 
+    shutil.move(source_folder + "/" + filename,
+                destination + "/" + filename)
+ 
+print("Files sorted!")
 
 """
 ============================================
 A MISTAKE I MADE (or one I want to avoid)
 ============================================
-[what tripped you up while building this? e.g. a path that didn't
-exist, a file that got overwritten, something that didn't work the
-way you expected at first]
-
+At first I was confused about the file path and folder location. 
+The program will not work if the source folder does not exist or if the path is incorrect. 
+I learned that I need to make sure the folder name and file path are correct before running the program.
+Also, to have a existing files ready.
 
 ============================================
 HOW THIS CONNECTS TO SOMETHING ELSE
