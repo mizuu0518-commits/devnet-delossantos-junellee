@@ -28,7 +28,13 @@ MY OWN EXAMPLE(S)
 Write at least one working example below that you
 came up with yourself — not copied from class.
 """
-
+score = int(input("Enter Score: "))
+if(score == 10):
+  print("Perfect Score!")
+elif(score == 5):
+  print("Average Score!")
+else:
+  print("Failed")
 
 
 """
