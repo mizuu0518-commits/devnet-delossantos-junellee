@@ -29,15 +29,7 @@ I created a Git repository for my practice project and created a branch called p
 ```
 # paste your actual commands here
 ```
-git init
-git add .
-git commit -m "practice"
-git switch -c practice-branch
-git branch
-git push https://github.com/delossantosjunelle18-rgb/practice-repository
-git push --set-upstream https://github.com/delossantosjunelle18-rgb/practice-repository
-git push --set-upstream https://github.com/delossantosjunelle18-rgb/practice-repository.git
-git push --set-upstream https://github.com/delossantosjunelle18-rgb/practice-repository.git practice-branch
+
 ---
 
 ## A mistake I made (or one I want to avoid)
