@@ -19,13 +19,13 @@ def display_menu():
     user_choice = (input("Choose an option: "))
     for user in user_choice:
      if(user_choice == 1):
-        add_movie()
+        return add_movie()
      elif(user_choice == 2):
-        view_movies()
+        return view_movies()
      elif(user_choice == 3):
-         count_watched_unwatched()
+         return count_watched_unwatched()
      elif(user_choice == 4):
-         find_movie()
+         return find_movie()
      else:
         break 
 display_menu()
@@ -42,12 +42,13 @@ def add_movie(movies):
     movies["Movie Director"] = director
     movies["Status"] = status
     print(movies)
-add_movie(movies)
+    return add_movie(movies)
 
 
 def view_movies(movies):
     # loop through and print every movie
     # handle empty list
+    for movie in movies:
         print(movies)
 view_movies(movies)
 
