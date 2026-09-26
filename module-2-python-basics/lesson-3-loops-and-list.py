@@ -1,24 +1,28 @@
 """
 Module 2 — Lesson 3: Loops & Lists
-Student: [your name]
-Date: [date]
+Student: Delos Santos, Junelle 
+Date: 09/26/2026
 
 ============================================
 WHAT IS THIS TOPIC? (explain it like you're
 teaching a friend who's never coded before)
 ============================================
-[write your own explanation here]
+A list is used to store multiple values in one variable.
+Loops are used to repeat code. A for loop goes through
+each item in a list, while a while loop repeats code
+as long as a condition is true.
+
 
 
 ============================================
 KEY VOCABULARY
 ============================================
-- list:
-- for loop:
-- while loop:
-- index:
-- iteration:
-(add more as needed)
+- list: a collection of multiple values
+- for loop: repeats code for each item in a list
+- while loop: repeats code while a condition is true
+- index: the position of an item in a list. It starts with 0.
+- iteration: one repetition of a loop
+
 
 
 ============================================
@@ -27,16 +31,16 @@ MY OWN EXAMPLE(S)
 Write at least one working example below that you
 came up with yourself — not copied from class.
 """
-
-# --- your code example goes here ---
+count = [1, 2, 3, 4, 5]
+for i in count:
+  print(i)
 
 
 """
 ============================================
 A MISTAKE I MADE (or one I want to avoid)
 ============================================
-[what's something confusing or easy to get wrong
-about this topic?]
+I put count inside the print instead of i.
 
 
 ============================================
