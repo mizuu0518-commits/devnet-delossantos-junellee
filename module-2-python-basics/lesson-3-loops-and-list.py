@@ -31,9 +31,7 @@ MY OWN EXAMPLE(S)
 Write at least one working example below that you
 came up with yourself — not copied from class.
 """
-count = [1, 2, 3, 4, 5]
-for i in count:
-  print(i)
+
 
 
 """
