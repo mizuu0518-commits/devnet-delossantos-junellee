@@ -32,7 +32,12 @@ MY OWN EXAMPLE(S)
 Write at least one working example below that you
 came up with yourself — not copied from class.
 """
-
+name = "Junelle"
+age = 18
+student = True
+print("Name:", name)
+print("Age:", age)
+print("Is student:", student)
 
 
 
